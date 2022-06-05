@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Busquedas</h1>
+
+<div id="busquedas">
+  <% @busquedas.each do |busqueda| %>
+    <%= render busqueda %>
+    <p>
+      <%= link_to "Show this busqueda", busqueda %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New busqueda", new_busqueda_path %>

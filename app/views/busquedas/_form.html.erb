@@ -1,0 +1,43 @@
+<%= form_with(model: busqueda) do |form| %>
+  <% if busqueda.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(busqueda.errors.count, "error") %> prohibited this busqueda from being saved:</h2>
+
+      <ul>
+        <% busqueda.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :tipo, style: "display: block" %><br />
+    <%= form.label :tipo, "Aleatorio", :value => "random"  %>
+    <%= form.radio_button :tipo, "random" %>
+    <%= form.label :tipo, "Texto Libre", :value => "text" %>
+    <%= form.radio_button :tipo, "text" %>
+    <%= form.label :tipo, "Categoria", :value => "category" %>
+    <%= form.radio_button :tipo, "category", :checked => true %>
+    
+  </div>
+
+  <div> 
+    <%= form.label :categoria, style: "display: block" %>
+    <%= form.text_field :categoria %>
+  </div>
+
+  <div>
+    <%= form.label :texto, style: "display: block" %>
+    <%= form.text_field :texto %>
+  </div>
+
+  <div>
+    <%= form.label :email, style: "display: block" %>
+    <%= form.text_field :email %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

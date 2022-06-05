@@ -1,0 +1,11 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @busqueda %>
+<h2>Resultados</h2>
+<%= render @busqueda.resultados %>
+<div>
+  <%= link_to "Edit this busqueda", edit_busqueda_path(@busqueda) %> |
+  <%= link_to "Back to busquedas", busquedas_path %>
+
+  <%= button_to "Destroy this busqueda", @busqueda, method: :delete %>
+</div>
