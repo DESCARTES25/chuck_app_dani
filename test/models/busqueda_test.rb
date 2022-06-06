@@ -1,7 +1,8 @@
 require "test_helper"
 
 class BusquedaTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  test 'busqueda_random_valida' do
+    busqueda = Busqueda.new(tipo: 'random' , email: 'escartin.daniel@gmail.com')
+    assert busqueda.valid?
+  end
 end

@@ -21,4 +21,14 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+    Building App:
+
+    docker-compose build
+
+    Start App:
+
+    docker-compose up
+
+    Stop App:
+
+    docker-compose down

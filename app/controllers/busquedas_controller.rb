@@ -83,7 +83,7 @@ class BusquedasController < ApplicationController
 
    
         #En caso de que el email del usuario venga informado y sea un email valido procedemos al envío del correo
-        
+        ChuckSearchMailer.welcome_email("inspiringbenchuck@gmail.com")
         
 
         format.html { redirect_to busqueda_url(@busqueda), notice: "Busqueda was successfully created." }
