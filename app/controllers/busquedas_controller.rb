@@ -14,6 +14,10 @@ class BusquedasController < ApplicationController
 
   # GET /busquedas/new
   def new
+    #Cargo las categorias existentes en el momento
+    @categoria = CategorySearch.new
+    @categoria.categories
+
     @busqueda = Busqueda.new
   end
 
@@ -83,7 +87,7 @@ class BusquedasController < ApplicationController
 
    
         #En caso de que el email del usuario venga informado y sea un email valido procedemos al envío del correo
-        ChuckSearchMailer.welcome_email("inspiringbenchuck@gmail.com")
+        #ChuckSearchMailer.welcome_email("inspiringbenchuck@gmail.com")
         
 
         format.html { redirect_to busqueda_url(@busqueda), notice: "Busqueda was successfully created." }

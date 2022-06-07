@@ -6,13 +6,20 @@ class CategorySearch
   base_uri 'https://api.chucknorris.io/jokes'
 
   def categories
-    return self.class.get("/categories")
+    
+    category_array =  self.class.get("/categories")
+
+    category_array.each do |item|
+       puts item
+       
+       Categorium.upsert({name: item}, unique_by: [:name])
+
+    end
+
+    # Categorium.upsert_all(category_array.map { |name|
+    #   {name: name}
+    # }, unique_by: [:name])
+
   end
 
 end
-
-
-# chuck_categories = ChuckSearch.new("","", 1)
-# category_array = chuck_categories.categories
-# puts category_array[0]
-# puts category_array[1]

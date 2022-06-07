@@ -24,8 +24,10 @@
 
   <div> 
     <%= form.label :categoria, style: "display: block" %>
-    <%= form.text_field :categoria %>
+    <%= form.select :categoria, Categorium.pluck(:name, :name), :prompt => "Select One" %>
   </div>
+
+
 
   <div>
     <%= form.label :texto, style: "display: block" %>
