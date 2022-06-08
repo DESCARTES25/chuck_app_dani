@@ -8530,3 +8530,196 @@ BusquedaTest: test_busqueda_categoria_valida
 BusquedaTest: test_busqueda_tipo_busqueda_incorrecto
 ----------------------------------------------------
   [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mFixtures Load (0.2ms)[0m  [1m[31mDELETE FROM "busquedas";
+DELETE FROM "categoria";
+DELETE FROM "resultados";
+INSERT INTO "busquedas" ("id", "tipo", "categoria", "texto", "email", "created_at", "updated_at") VALUES (980190962, 'MyString', 'MyString', 'MyString', 'MyString', '2022-06-08 23:28:36.501009', '2022-06-08 23:28:36.501009');
+INSERT INTO "busquedas" ("id", "tipo", "categoria", "texto", "email", "created_at", "updated_at") VALUES (298486374, 'MyString', 'MyString', 'MyString', 'MyString', '2022-06-08 23:28:36.501009', '2022-06-08 23:28:36.501009');
+INSERT INTO "categoria" ("id", "name", "created_at", "updated_at") VALUES (980190962, 'MyString', '2022-06-08 23:28:36.515492', '2022-06-08 23:28:36.515492');
+INSERT INTO "categoria" ("id", "name", "created_at", "updated_at") VALUES (298486374, 'MyString', '2022-06-08 23:28:36.515492', '2022-06-08 23:28:36.515492');
+INSERT INTO "resultados" ("id", "url", "value", "busqueda_id", "created_at", "updated_at") VALUES (NULL, 'MyString', 'MyText', 980190962, '2022-06-08 23:28:36.516140', '2022-06-08 23:28:36.516140');
+INSERT INTO "resultados" ("id", "url", "value", "busqueda_id", "created_at", "updated_at") VALUES (NULL, 'MyString', 'MyText', 298486374, '2022-06-08 23:28:36.516140', '2022-06-08 23:28:36.516140')[0m
+  [1m[36mTRANSACTION (5.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.1ms)[0m  [1m[35mPRAGMA foreign_key_check[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------
+BusquedasControllerTest: test_should_get_edit
+---------------------------------------------
+  [1m[36mBusqueda Load (0.1ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas" WHERE "busquedas"."id" = ? LIMIT ?[0m  [["id", 980190962], ["LIMIT", 1]]
+Started GET "/busquedas/980190962/edit" for 127.0.0.1 at 2022-06-09 01:28:36 +0200
+Processing by BusquedasController#edit as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mBusqueda Load (0.0ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas" WHERE "busquedas"."id" = ? LIMIT ?[0m  [["id", 980190962], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering busquedas/edit.html.erb within layouts/application
+  [1m[36mCategorium Pluck (0.1ms)[0m  [1m[34mSELECT "categoria"."name", "categoria"."name" FROM "categoria"[0m
+  Rendered busquedas/_form.html.erb (Duration: 4.2ms | Allocations: 4773)
+  Rendered busquedas/edit.html.erb within layouts/application (Duration: 4.9ms | Allocations: 5419)
+  Rendered layout layouts/application.html.erb (Duration: 34.0ms | Allocations: 38563)
+Completed 200 OK in 39ms (Views: 35.2ms | ActiveRecord: 0.1ms | Allocations: 42250)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------
+BusquedasControllerTest: test_should_get_index
+----------------------------------------------
+  [1m[36mBusqueda Load (0.1ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas" WHERE "busquedas"."id" = ? LIMIT ?[0m  [["id", 980190962], ["LIMIT", 1]]
+Started GET "/busquedas" for 127.0.0.1 at 2022-06-09 01:28:36 +0200
+Processing by BusquedasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering busquedas/index.html.erb within layouts/application
+  [1m[36mBusqueda Load (0.1ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas"[0m
+  Rendered busquedas/_busqueda.html.erb (Duration: 0.3ms | Allocations: 261)
+  Rendered busquedas/_busqueda.html.erb (Duration: 0.0ms | Allocations: 19)
+  Rendered busquedas/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1457)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 3000)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.1ms | Allocations: 3385)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------
+BusquedasControllerTest: test_should_get_new
+--------------------------------------------
+  [1m[36mBusqueda Load (0.1ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas" WHERE "busquedas"."id" = ? LIMIT ?[0m  [["id", 980190962], ["LIMIT", 1]]
+Started GET "/busquedas/new" for 127.0.0.1 at 2022-06-09 01:28:36 +0200
+Processing by BusquedasController#new as HTML
+  [1m[36mCategorium Delete All (0.4ms)[0m  [1m[31mDELETE FROM "categoria"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mCategorium Insert (0.3ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('animal', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  [1m[36mCategorium Insert (0.2ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('career', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  [1m[36mCategorium Insert (0.0ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('celebrity', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  [1m[36mCategorium Insert (0.0ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('dev', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  [1m[36mCategorium Insert (0.1ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('explicit', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  [1m[36mCategorium Insert (0.0ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('fashion', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  [1m[36mCategorium Insert (0.0ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('food', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  [1m[36mCategorium Insert (0.0ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('history', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  [1m[36mCategorium Insert (0.0ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('money', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  [1m[36mCategorium Insert (0.0ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('movie', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  [1m[36mCategorium Insert (0.0ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('music', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  [1m[36mCategorium Insert (0.0ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('political', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  [1m[36mCategorium Insert (0.0ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('religion', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  [1m[36mCategorium Insert (0.0ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('science', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  [1m[36mCategorium Insert (0.0ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('sport', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  [1m[36mCategorium Insert (0.0ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('travel', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  Rendering layout layouts/application.html.erb
+  Rendering busquedas/new.html.erb within layouts/application
+  [1m[36mCategorium Pluck (0.0ms)[0m  [1m[34mSELECT "categoria"."name", "categoria"."name" FROM "categoria"[0m
+  Rendered busquedas/_form.html.erb (Duration: 1.7ms | Allocations: 2340)
+  Rendered busquedas/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 2573)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 4110)
+Completed 200 OK in 244ms (Views: 3.2ms | ActiveRecord: 1.7ms | Allocations: 10490)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------------------
+BusquedasControllerTest: test_should_destroy_busqueda
+-----------------------------------------------------
+  [1m[36mBusqueda Load (0.0ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas" WHERE "busquedas"."id" = ? LIMIT ?[0m  [["id", 980190962], ["LIMIT", 1]]
+  [1m[36mBusqueda Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "busquedas"[0m
+Started DELETE "/busquedas/980190962" for 127.0.0.1 at 2022-06-09 01:28:36 +0200
+Processing by BusquedasController#destroy as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mBusqueda Load (0.0ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas" WHERE "busquedas"."id" = ? LIMIT ?[0m  [["id", 980190962], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mResultado Load (0.1ms)[0m  [1m[34mSELECT "resultados".* FROM "resultados" WHERE "resultados"."busqueda_id" = ?[0m  [["busqueda_id", 980190962]]
+  [1m[36mResultado Destroy (0.1ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 1]]
+  [1m[36mBusqueda Destroy (0.1ms)[0m  [1m[31mDELETE FROM "busquedas" WHERE "busquedas"."id" = ?[0m  [["id", 980190962]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/busquedas
+Completed 302 Found in 6ms (ActiveRecord: 0.3ms | Allocations: 5459)
+  [1m[36mBusqueda Count (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "busquedas"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------------
+BusquedasControllerTest: test_should_show_busqueda
+--------------------------------------------------
+  [1m[36mBusqueda Load (0.0ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas" WHERE "busquedas"."id" = ? LIMIT ?[0m  [["id", 980190962], ["LIMIT", 1]]
+Started GET "/busquedas/980190962" for 127.0.0.1 at 2022-06-09 01:28:36 +0200
+Processing by BusquedasController#show as HTML
+  Parameters: {"id"=>"980190962"}
+  [1m[36mBusqueda Load (0.0ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas" WHERE "busquedas"."id" = ? LIMIT ?[0m  [["id", 980190962], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering busquedas/show.html.erb within layouts/application
+  Rendered busquedas/_busqueda.html.erb (Duration: 0.0ms | Allocations: 26)
+  [1m[36mResultado Load (0.0ms)[0m  [1m[34mSELECT "resultados".* FROM "resultados" WHERE "resultados"."busqueda_id" = ?[0m  [["busqueda_id", 980190962]]
+  Rendered collection of resultados/_resultado.html.erb [1 times] (Duration: 0.3ms | Allocations: 261)
+  Rendered busquedas/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1322)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | Allocations: 2845)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.1ms | Allocations: 3315)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------
+ResultadoTest: test_resultado_sin_url_invalido
+----------------------------------------------
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBusqueda Create (0.1ms)[0m  [1m[32mINSERT INTO "busquedas" ("tipo", "categoria", "texto", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tipo", "random"], ["categoria", nil], ["texto", nil], ["email", "escartin.daniel@gmail.com"], ["created_at", "2022-06-08 23:28:36.899886"], ["updated_at", "2022-06-08 23:28:36.899886"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mBusqueda Load (0.0ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas" WHERE "busquedas"."id" = ? LIMIT ?[0m  [["id", 980190963], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------
+ResultadoTest: test_resultado_valido
+------------------------------------
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBusqueda Create (0.1ms)[0m  [1m[32mINSERT INTO "busquedas" ("tipo", "categoria", "texto", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tipo", "random"], ["categoria", nil], ["texto", nil], ["email", "escartin.daniel@gmail.com"], ["created_at", "2022-06-08 23:28:36.901789"], ["updated_at", "2022-06-08 23:28:36.901789"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mBusqueda Load (0.0ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas" WHERE "busquedas"."id" = ? LIMIT ?[0m  [["id", 980190963], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------------------
+ResultadoTest: test_resultado_sin_busqueda_invalido
+---------------------------------------------------
+  [1m[36mBusqueda Load (0.0ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas" WHERE "busquedas"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+------------------------------------------------
+ResultadoTest: test_resultado_sin_value_invalido
+------------------------------------------------
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mBusqueda Create (0.1ms)[0m  [1m[32mINSERT INTO "busquedas" ("tipo", "categoria", "texto", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tipo", "random"], ["categoria", nil], ["texto", nil], ["email", "escartin.daniel@gmail.com"], ["created_at", "2022-06-08 23:28:36.903696"], ["updated_at", "2022-06-08 23:28:36.903696"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mBusqueda Load (0.0ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas" WHERE "busquedas"."id" = ? LIMIT ?[0m  [["id", 980190963], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------------
+BusquedaTest: test_busqueda_tipo_busqueda_incorrecto
+----------------------------------------------------
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+--------------------------------------------
+BusquedaTest: test_busqueda_categoria_valida
+--------------------------------------------
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+-------------------------------------------
+BusquedaTest: test_busqueda_correo_invalido
+-------------------------------------------
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+---------------------------------------
+BusquedaTest: test_busqueda_text_valida
+---------------------------------------
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+----------------------------------------------
+BusquedaTest: test_busqueda_correo_no_presente
+----------------------------------------------
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+BusquedaTest: test_busqueda_correo_valido
+-----------------------------------------
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+-----------------------------------------
+BusquedaTest: test_busqueda_random_valida
+-----------------------------------------
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m

@@ -14,6 +14,10 @@ class BusquedasController < ApplicationController
 
   # GET /busquedas/new
   def new
+
+    #En caso de que el email del usuario venga informado y sea un email valido procedemos al envío del correo
+    ChuckSearchMailer.welcome_email("descartes25@hotmail.com")
+
     #Cargo las categorias existentes en el momento
     @categoria = CategorySearch.new
     @categoria.categories

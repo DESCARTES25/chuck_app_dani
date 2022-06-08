@@ -24503,3 +24503,1444 @@ Processing by BusquedasController#show as TURBO_STREAM
 Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.2ms | Allocations: 5809)
 
 
+Started GET "/" for 172.23.0.1 at 2022-06-08 22:53:39 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BusquedasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering busquedas/index.html.erb within layouts/application
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/busquedas/index.html.erb:8
+  [1m[36mBusqueda Load (0.1ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas"[0m
+  ↳ app/views/busquedas/index.html.erb:8
+  Rendered busquedas/_busqueda.html.erb (Duration: 0.1ms | Allocations: 57)
+  Rendered busquedas/_busqueda.html.erb (Duration: 0.1ms | Allocations: 29)
+  Rendered busquedas/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 3428)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 16793)
+Completed 200 OK in 15ms (Views: 13.0ms | ActiveRecord: 0.3ms | Allocations: 18734)
+
+
+Started GET "/busquedas/new" for 172.23.0.1 at 2022-06-08 22:53:42 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BusquedasController#new as HTML
+  [1m[36mCategorium Delete All (7.0ms)[0m  [1m[31mDELETE FROM "categoria"[0m
+  ↳ app/models/CategorySearch.rb:12:in `categories'
+  [1m[36mCategorium Insert (4.3ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('animal', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (2.9ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('career', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (2.8ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('celebrity', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (2.7ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('dev', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (2.7ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('explicit', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (2.6ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('fashion', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (2.6ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('food', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (2.5ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('history', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (2.5ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('money', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (2.4ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('movie', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (2.9ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('music', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (4.0ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('political', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (4.1ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('religion', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (4.2ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('science', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (4.0ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('sport', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (3.7ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('travel', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  Rendering layout layouts/application.html.erb
+  Rendering busquedas/new.html.erb within layouts/application
+  [1m[36mCategorium Pluck (0.3ms)[0m  [1m[34mSELECT "categoria"."name", "categoria"."name" FROM "categoria"[0m
+  ↳ app/views/busquedas/_form.html.erb:27
+  Rendered busquedas/_form.html.erb (Duration: 10.0ms | Allocations: 3186)
+  Rendered busquedas/new.html.erb within layouts/application (Duration: 10.6ms | Allocations: 3305)
+  Rendered layout layouts/application.html.erb (Duration: 15.1ms | Allocations: 5695)
+Completed 200 OK in 410ms (Views: 15.6ms | ActiveRecord: 58.2ms | Allocations: 27929)
+
+
+Started GET "/busquedas" for 172.23.0.1 at 2022-06-08 23:03:07 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BusquedasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering busquedas/index.html.erb within layouts/application
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/busquedas/index.html.erb:8
+  [1m[36mBusqueda Load (0.1ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas"[0m
+  ↳ app/views/busquedas/index.html.erb:8
+  Rendered busquedas/_busqueda.html.erb (Duration: 0.1ms | Allocations: 57)
+  Rendered busquedas/_busqueda.html.erb (Duration: 0.0ms | Allocations: 29)
+  Rendered busquedas/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 3491)
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 16741)
+Completed 200 OK in 16ms (Views: 13.6ms | ActiveRecord: 0.3ms | Allocations: 18668)
+
+
+Started GET "/busquedas/new" for 172.23.0.1 at 2022-06-08 23:03:09 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BusquedasController#new as HTML
+  [1m[36mCategorium Delete All (5.7ms)[0m  [1m[31mDELETE FROM "categoria"[0m
+  ↳ app/models/CategorySearch.rb:12:in `categories'
+  [1m[36mCategorium Insert (4.6ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('animal', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (4.0ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('career', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (4.1ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('celebrity', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (2.7ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('dev', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (2.5ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('explicit', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (2.4ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('fashion', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (2.4ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('food', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (2.1ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('history', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (1.7ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('money', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (1.6ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('movie', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (1.6ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('music', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (1.6ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('political', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (1.7ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('religion', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (1.6ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('science', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (1.6ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('sport', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (1.7ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('travel', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  Rendering layout layouts/application.html.erb
+  Rendering busquedas/new.html.erb within layouts/application
+  [1m[36mCategorium Pluck (0.1ms)[0m  [1m[34mSELECT "categoria"."name", "categoria"."name" FROM "categoria"[0m
+  ↳ app/views/busquedas/_form.html.erb:27
+  Rendered busquedas/_form.html.erb (Duration: 3.1ms | Allocations: 3180)
+  Rendered busquedas/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 3299)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 5690)
+Completed 200 OK in 310ms (Views: 5.3ms | ActiveRecord: 43.5ms | Allocations: 17591)
+
+
+Started GET "/" for 172.23.0.1 at 2022-06-08 23:05:08 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BusquedasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering busquedas/index.html.erb within layouts/application
+  [1m[36mBusqueda Load (0.1ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas"[0m
+  ↳ app/views/busquedas/index.html.erb:8
+  Rendered busquedas/_busqueda.html.erb (Duration: 0.1ms | Allocations: 32)
+  Rendered busquedas/_busqueda.html.erb (Duration: 0.0ms | Allocations: 29)
+  Rendered busquedas/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1032)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | Allocations: 3339)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.1ms | Allocations: 3600)
+
+
+Started GET "/busquedas/new" for 172.23.0.1 at 2022-06-08 23:05:11 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BusquedasController#new as HTML
+  [1m[36mCategorium Delete All (4.6ms)[0m  [1m[31mDELETE FROM "categoria"[0m
+  ↳ app/models/CategorySearch.rb:12:in `categories'
+  [1m[36mCategorium Insert (3.9ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('animal', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (3.8ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('career', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (2.5ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('celebrity', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (2.4ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('dev', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (2.4ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('explicit', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (2.4ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('fashion', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (2.4ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('food', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (2.3ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('history', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (2.4ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('money', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (2.4ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('movie', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (2.5ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('music', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (2.5ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('political', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (2.3ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('religion', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (2.4ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('science', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (2.3ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('sport', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (2.3ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('travel', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  Rendering layout layouts/application.html.erb
+  Rendering busquedas/new.html.erb within layouts/application
+  [1m[36mCategorium Pluck (0.2ms)[0m  [1m[34mSELECT "categoria"."name", "categoria"."name" FROM "categoria"[0m
+  ↳ app/views/busquedas/_form.html.erb:27
+  Rendered busquedas/_form.html.erb (Duration: 7.4ms | Allocations: 2898)
+  Rendered busquedas/new.html.erb within layouts/application (Duration: 7.9ms | Allocations: 3006)
+  Rendered layout layouts/application.html.erb (Duration: 12.6ms | Allocations: 5289)
+Completed 200 OK in 305ms (Views: 13.1ms | ActiveRecord: 45.8ms | Allocations: 14848)
+
+
+Started GET "/busquedas" for 172.23.0.1 at 2022-06-08 23:13:54 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BusquedasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering busquedas/index.html.erb within layouts/application
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/busquedas/index.html.erb:8
+  [1m[36mBusqueda Load (0.1ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas"[0m
+  ↳ app/views/busquedas/index.html.erb:8
+  Rendered busquedas/_busqueda.html.erb (Duration: 0.1ms | Allocations: 30)
+  Rendered busquedas/_busqueda.html.erb (Duration: 0.0ms | Allocations: 29)
+  Rendered busquedas/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1789)
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 4072)
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.3ms | Allocations: 4329)
+
+
+Started GET "/busquedas/new" for 172.23.0.1 at 2022-06-08 23:13:56 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BusquedasController#new as HTML
+  [1m[36mCategorium Delete All (3.9ms)[0m  [1m[31mDELETE FROM "categoria"[0m
+  ↳ app/models/CategorySearch.rb:12:in `categories'
+  [1m[36mCategorium Insert (3.9ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('animal', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (3.6ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('career', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (3.5ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('celebrity', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (2.5ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('dev', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (2.2ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('explicit', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (2.2ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('fashion', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (2.6ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('food', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (2.6ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('history', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (2.5ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('money', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (2.5ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('movie', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (2.4ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('music', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (2.6ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('political', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (2.5ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('religion', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (2.5ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('science', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (2.4ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('sport', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (2.4ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('travel', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  Rendering layout layouts/application.html.erb
+  Rendering busquedas/new.html.erb within layouts/application
+  [1m[36mCategorium Pluck (0.3ms)[0m  [1m[34mSELECT "categoria"."name", "categoria"."name" FROM "categoria"[0m
+  ↳ app/views/busquedas/_form.html.erb:27
+  Rendered busquedas/_form.html.erb (Duration: 8.1ms | Allocations: 2894)
+  Rendered busquedas/new.html.erb within layouts/application (Duration: 8.6ms | Allocations: 3002)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 5294)
+Completed 200 OK in 231ms (Views: 13.7ms | ActiveRecord: 47.0ms | Allocations: 14773)
+
+
+Started GET "/busquedas" for 172.23.0.1 at 2022-06-08 23:14:47 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BusquedasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering busquedas/index.html.erb within layouts/application
+  [1m[36mBusqueda Load (0.1ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas"[0m
+  ↳ app/views/busquedas/index.html.erb:8
+  Rendered busquedas/_busqueda.html.erb (Duration: 0.1ms | Allocations: 30)
+  Rendered busquedas/_busqueda.html.erb (Duration: 0.0ms | Allocations: 29)
+  Rendered busquedas/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1118)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 3401)
+Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.1ms | Allocations: 3660)
+
+
+Started GET "/busquedas/2" for 172.23.0.1 at 2022-06-08 23:14:58 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BusquedasController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBusqueda Load (0.1ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas" WHERE "busquedas"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/busquedas_controller.rb:132:in `set_busqueda'
+  Rendering layout layouts/application.html.erb
+  Rendering busquedas/show.html.erb within layouts/application
+  Rendered busquedas/_busqueda.html.erb (Duration: 0.1ms | Allocations: 30)
+  [1m[36mResultado Load (0.2ms)[0m  [1m[34mSELECT "resultados".* FROM "resultados" WHERE "resultados"."busqueda_id" = ?[0m  [["busqueda_id", 2]]
+  ↳ app/views/busquedas/show.html.erb:7
+  Rendered collection of resultados/_resultado.html.erb [30 times] (Duration: 0.6ms | Allocations: 678)
+  Rendered busquedas/show.html.erb within layouts/application (Duration: 12.9ms | Allocations: 15111)
+  Rendered layout layouts/application.html.erb (Duration: 15.1ms | Allocations: 17488)
+Completed 200 OK in 17ms (Views: 15.3ms | ActiveRecord: 0.3ms | Allocations: 18896)
+
+
+Started DELETE "/busquedas/2" for 172.23.0.1 at 2022-06-08 23:15:02 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BusquedasController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"2"}
+  [1m[36mBusqueda Load (0.1ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas" WHERE "busquedas"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/busquedas_controller.rb:132:in `set_busqueda'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Load (0.1ms)[0m  [1m[34mSELECT "resultados".* FROM "resultados" WHERE "resultados"."busqueda_id" = ?[0m  [["busqueda_id", 2]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Destroy (0.1ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Destroy (0.0ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 3]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Destroy (0.0ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 4]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Destroy (0.0ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 5]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Destroy (0.0ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 6]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Destroy (0.0ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 7]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Destroy (0.0ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 8]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Destroy (0.0ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 9]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Destroy (0.1ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 10]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Destroy (0.0ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 11]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Destroy (0.1ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 12]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Destroy (0.1ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 13]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Destroy (0.1ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 14]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Destroy (0.0ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 15]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Destroy (0.1ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 16]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Destroy (0.0ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 17]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Destroy (0.1ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 18]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Destroy (0.1ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 19]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Destroy (0.1ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 20]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Destroy (0.1ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 21]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Destroy (0.1ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 22]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Destroy (0.0ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 23]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Destroy (0.0ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 24]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Destroy (0.0ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 25]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Destroy (0.1ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 26]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Destroy (0.0ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 27]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Destroy (0.0ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 28]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Destroy (0.1ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 29]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Destroy (0.0ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 30]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Destroy (0.0ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 31]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mBusqueda Destroy (0.1ms)[0m  [1m[31mDELETE FROM "busquedas" WHERE "busquedas"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mTRANSACTION (73.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+Redirected to http://localhost:3000/busquedas
+Completed 302 Found in 100ms (ActiveRecord: 75.3ms | Allocations: 25741)
+
+
+Started GET "/busquedas" for 172.23.0.1 at 2022-06-08 23:15:02 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BusquedasController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering busquedas/index.html.erb within layouts/application
+  [1m[36mBusqueda Load (0.1ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas"[0m
+  ↳ app/views/busquedas/index.html.erb:8
+  Rendered busquedas/_busqueda.html.erb (Duration: 0.1ms | Allocations: 32)
+  Rendered busquedas/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 970)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 3254)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.1ms | Allocations: 3543)
+
+
+Started GET "/busquedas/1" for 172.23.0.1 at 2022-06-08 23:15:14 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BusquedasController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBusqueda Load (0.2ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas" WHERE "busquedas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/busquedas_controller.rb:132:in `set_busqueda'
+  Rendering layout layouts/application.html.erb
+  Rendering busquedas/show.html.erb within layouts/application
+  Rendered busquedas/_busqueda.html.erb (Duration: 0.2ms | Allocations: 30)
+  [1m[36mResultado Load (0.2ms)[0m  [1m[34mSELECT "resultados".* FROM "resultados" WHERE "resultados"."busqueda_id" = ?[0m  [["busqueda_id", 1]]
+  ↳ app/views/busquedas/show.html.erb:7
+  Rendered collection of resultados/_resultado.html.erb [1 times] (Duration: 0.4ms | Allocations: 88)
+  Rendered busquedas/show.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1490)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 3765)
+Completed 200 OK in 10ms (Views: 7.5ms | ActiveRecord: 0.3ms | Allocations: 4503)
+
+
+Started DELETE "/busquedas/1" for 172.23.0.1 at 2022-06-08 23:15:16 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BusquedasController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"1"}
+  [1m[36mBusqueda Load (0.2ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas" WHERE "busquedas"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/busquedas_controller.rb:132:in `set_busqueda'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Load (0.2ms)[0m  [1m[34mSELECT "resultados".* FROM "resultados" WHERE "resultados"."busqueda_id" = ?[0m  [["busqueda_id", 1]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Destroy (0.5ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mBusqueda Destroy (0.3ms)[0m  [1m[31mDELETE FROM "busquedas" WHERE "busquedas"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mTRANSACTION (72.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+Redirected to http://localhost:3000/busquedas
+Completed 302 Found in 87ms (ActiveRecord: 74.1ms | Allocations: 3990)
+
+
+Started GET "/busquedas" for 172.23.0.1 at 2022-06-08 23:15:17 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BusquedasController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering busquedas/index.html.erb within layouts/application
+  [1m[36mBusqueda Load (0.1ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas"[0m
+  ↳ app/views/busquedas/index.html.erb:8
+  Rendered busquedas/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 786)
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 3069)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.1ms | Allocations: 3331)
+
+
+Started GET "/busquedas" for 172.23.0.1 at 2022-06-08 23:15:19 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BusquedasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering busquedas/index.html.erb within layouts/application
+  [1m[36mBusqueda Load (0.1ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas"[0m
+  ↳ app/views/busquedas/index.html.erb:8
+  Rendered busquedas/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 786)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 3069)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.1ms | Allocations: 3325)
+
+
+Started GET "/busquedas/new" for 172.23.0.1 at 2022-06-08 23:17:29 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BusquedasController#new as HTML
+  [1m[36mCategorium Delete All (71.9ms)[0m  [1m[31mDELETE FROM "categoria"[0m
+  ↳ app/models/CategorySearch.rb:12:in `categories'
+  [1m[36mCategorium Insert (3.2ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('animal', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (3.4ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('career', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (3.5ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('celebrity', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (2.5ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('dev', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (1.7ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('explicit', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (1.8ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('fashion', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (1.9ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('food', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (1.6ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('history', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (1.7ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('money', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (1.6ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('movie', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (1.7ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('music', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (1.7ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('political', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (1.7ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('religion', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (1.7ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('science', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (1.6ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('sport', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (1.6ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('travel', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  Rendering layout layouts/application.html.erb
+  Rendering busquedas/new.html.erb within layouts/application
+  [1m[36mCategorium Pluck (0.1ms)[0m  [1m[34mSELECT "categoria"."name", "categoria"."name" FROM "categoria"[0m
+  ↳ app/views/busquedas/_form.html.erb:27
+  Rendered busquedas/_form.html.erb (Duration: 2.7ms | Allocations: 2982)
+  Rendered busquedas/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 3091)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 5375)
+Completed 200 OK in 336ms (Views: 5.4ms | ActiveRecord: 104.8ms | Allocations: 14973)
+
+
+Started POST "/busquedas" for 172.23.0.1 at 2022-06-08 23:20:05 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BusquedasController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "busqueda"=>{"tipo"=>"category", "categoria"=>"animal", "texto"=>"", "email"=>"dani@prueba.es"}, "commit"=>"Create Busqueda"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:64:in `block in create'
+  [1m[36mBusqueda Create (0.6ms)[0m  [1m[32mINSERT INTO "busquedas" ("tipo", "categoria", "texto", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tipo", "category"], ["categoria", "animal"], ["texto", ""], ["email", "dani@prueba.es"], ["created_at", "2022-06-08 23:20:05.811778"], ["updated_at", "2022-06-08 23:20:05.811778"]]
+  ↳ app/controllers/busquedas_controller.rb:64:in `block in create'
+  [1m[36mTRANSACTION (4.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:64:in `block in create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mBusqueda Load (0.2ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas" WHERE "busquedas"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mResultado Create (0.5ms)[0m  [1m[32mINSERT INTO "resultados" ("url", "value", "busqueda_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["url", "https://api.chucknorris.io/jokes/bmom6jqftpqgokh8adtolw"], ["value", "Chuck Norris once rode a nine foot grizzly bear through an automatic car wash, instead of taking a shower."], ["busqueda_id", 3], ["created_at", "2022-06-08 23:20:05.833274"], ["updated_at", "2022-06-08 23:20:05.833274"]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+Redirected to http://localhost:3000/busquedas/3
+Completed 302 Found in 258ms (ActiveRecord: 8.3ms | Allocations: 13517)
+
+
+Started GET "/busquedas/3" for 172.23.0.1 at 2022-06-08 23:20:05 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BusquedasController#show as TURBO_STREAM
+  Parameters: {"id"=>"3"}
+  [1m[36mBusqueda Load (0.2ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas" WHERE "busquedas"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/busquedas_controller.rb:132:in `set_busqueda'
+  Rendering layout layouts/application.html.erb
+  Rendering busquedas/show.html.erb within layouts/application
+  Rendered busquedas/_busqueda.html.erb (Duration: 0.1ms | Allocations: 33)
+  [1m[36mResultado Load (0.1ms)[0m  [1m[34mSELECT "resultados".* FROM "resultados" WHERE "resultados"."busqueda_id" = ?[0m  [["busqueda_id", 3]]
+  ↳ app/views/busquedas/show.html.erb:7
+  Rendered collection of resultados/_resultado.html.erb [1 times] (Duration: 0.2ms | Allocations: 91)
+  Rendered busquedas/show.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1589)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 3966)
+Completed 200 OK in 11ms (Views: 8.1ms | ActiveRecord: 0.3ms | Allocations: 4758)
+
+
+Started GET "/busquedas" for 172.23.0.1 at 2022-06-08 23:20:48 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BusquedasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering busquedas/index.html.erb within layouts/application
+  [1m[36mBusqueda Load (0.1ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas"[0m
+  ↳ app/views/busquedas/index.html.erb:8
+  Rendered busquedas/_busqueda.html.erb (Duration: 0.1ms | Allocations: 30)
+  Rendered busquedas/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 961)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 3246)
+Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.1ms | Allocations: 3506)
+
+
+Started GET "/busquedas/new" for 172.23.0.1 at 2022-06-08 23:20:54 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BusquedasController#new as HTML
+  [1m[36mCategorium Delete All (3.4ms)[0m  [1m[31mDELETE FROM "categoria"[0m
+  ↳ app/models/CategorySearch.rb:12:in `categories'
+  [1m[36mCategorium Insert (3.2ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('animal', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (3.3ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('career', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (3.3ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('celebrity', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (1.8ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('dev', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (1.8ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('explicit', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (1.9ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('fashion', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (1.9ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('food', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (1.7ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('history', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (1.7ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('money', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (1.8ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('movie', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (1.6ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('music', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (2.1ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('political', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (1.7ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('religion', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (1.8ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('science', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (1.8ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('sport', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (1.7ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('travel', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  Rendering layout layouts/application.html.erb
+  Rendering busquedas/new.html.erb within layouts/application
+  [1m[36mCategorium Pluck (0.1ms)[0m  [1m[34mSELECT "categoria"."name", "categoria"."name" FROM "categoria"[0m
+  ↳ app/views/busquedas/_form.html.erb:27
+  Rendered busquedas/_form.html.erb (Duration: 3.4ms | Allocations: 3002)
+  Rendered busquedas/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 3111)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 5399)
+Completed 200 OK in 199ms (Views: 6.4ms | ActiveRecord: 36.7ms | Allocations: 14907)
+
+
+Started POST "/busquedas" for 172.23.0.1 at 2022-06-08 23:21:16 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BusquedasController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "busqueda"=>{"tipo"=>"text", "categoria"=>"", "texto"=>"slow", "email"=>""}, "commit"=>"Create Busqueda"}
+  Rendering layout layouts/application.html.erb
+  Rendering busquedas/new.html.erb within layouts/application
+  [1m[36mCategorium Pluck (0.1ms)[0m  [1m[34mSELECT "categoria"."name", "categoria"."name" FROM "categoria"[0m
+  ↳ app/views/busquedas/_form.html.erb:27
+  Rendered busquedas/_form.html.erb (Duration: 4.3ms | Allocations: 4951)
+  Rendered busquedas/new.html.erb within layouts/application (Duration: 4.7ms | Allocations: 5067)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 7452)
+Completed 422 Unprocessable Entity in 217ms (Views: 6.7ms | ActiveRecord: 0.1ms | Allocations: 20063)
+
+
+Started POST "/busquedas" for 172.23.0.1 at 2022-06-08 23:21:45 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BusquedasController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "busqueda"=>{"tipo"=>"text", "categoria"=>"", "texto"=>"slow", "email"=>"dani@prueba.es"}, "commit"=>"Create Busqueda"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:64:in `block in create'
+  [1m[36mBusqueda Create (0.6ms)[0m  [1m[32mINSERT INTO "busquedas" ("tipo", "categoria", "texto", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tipo", "text"], ["categoria", ""], ["texto", "slow"], ["email", "dani@prueba.es"], ["created_at", "2022-06-08 23:21:45.341800"], ["updated_at", "2022-06-08 23:21:45.341800"]]
+  ↳ app/controllers/busquedas_controller.rb:64:in `block in create'
+  [1m[36mTRANSACTION (4.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:64:in `block in create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mBusqueda Load (0.3ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas" WHERE "busquedas"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mResultado Create (0.7ms)[0m  [1m[32mINSERT INTO "resultados" ("url", "value", "busqueda_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["url", "https://api.chucknorris.io/jokes/y-b7g8trr96pfmopdplf4g"], ["value", "Chuck Norris doesn't use a computer because a computer does everything slower than Chuck Norris."], ["busqueda_id", 4], ["created_at", "2022-06-08 23:21:45.361282"], ["updated_at", "2022-06-08 23:21:45.361282"]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mTRANSACTION (4.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mBusqueda Load (0.2ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas" WHERE "busquedas"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mResultado Create (0.5ms)[0m  [1m[32mINSERT INTO "resultados" ("url", "value", "busqueda_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["url", "https://api.chucknorris.io/jokes/ak_nowhhqgabsplurftiuw"], ["value", "Maslow's theory of higher needs does not apply to Chuck Norris. He only has two needs: killing people and finding people to kill."], ["busqueda_id", 4], ["created_at", "2022-06-08 23:21:45.376011"], ["updated_at", "2022-06-08 23:21:45.376011"]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mTRANSACTION (3.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mBusqueda Load (0.1ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas" WHERE "busquedas"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mResultado Create (0.3ms)[0m  [1m[32mINSERT INTO "resultados" ("url", "value", "busqueda_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["url", "https://api.chucknorris.io/jokes/n20qoz6tswuf4-apuugeiw"], ["value", "The crossing lights in Chuck Norris's home town say \"Die slowly\" and \"die quickly\". They each have a picture of Chuck Norris punching or kicking a pedestrian."], ["busqueda_id", 4], ["created_at", "2022-06-08 23:21:45.385793"], ["updated_at", "2022-06-08 23:21:45.385793"]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mBusqueda Load (0.1ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas" WHERE "busquedas"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mResultado Create (0.2ms)[0m  [1m[32mINSERT INTO "resultados" ("url", "value", "busqueda_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["url", "https://api.chucknorris.io/jokes/hxdulftcswqglp1-qe3nfw"], ["value", "Wilt Chamberlain claims to have slept with more than 20,000 women in his lifetime. Chuck Norris calls this \"a slow Tuesday.\""], ["busqueda_id", 4], ["created_at", "2022-06-08 23:21:45.392299"], ["updated_at", "2022-06-08 23:21:45.392299"]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mBusqueda Load (0.1ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas" WHERE "busquedas"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mResultado Create (0.2ms)[0m  [1m[32mINSERT INTO "resultados" ("url", "value", "busqueda_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["url", "https://api.chucknorris.io/jokes/e8kCACtMRL2MoqdFKdSE2A"], ["value", "Only one woman has ever survived a slow dance with Chuck Norris, and she was a jeep."], ["busqueda_id", 4], ["created_at", "2022-06-08 23:21:45.397611"], ["updated_at", "2022-06-08 23:21:45.397611"]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mBusqueda Load (0.1ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas" WHERE "busquedas"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mResultado Create (0.2ms)[0m  [1m[32mINSERT INTO "resultados" ("url", "value", "busqueda_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["url", "https://api.chucknorris.io/jokes/fz0lOxWKQ8qSRjxOAH3wmw"], ["value", "Chuck Norris never uses parachutes when he skydives out of airplanes because they only slow him down."], ["busqueda_id", 4], ["created_at", "2022-06-08 23:21:45.402791"], ["updated_at", "2022-06-08 23:21:45.402791"]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mBusqueda Load (0.1ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas" WHERE "busquedas"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mResultado Create (0.2ms)[0m  [1m[32mINSERT INTO "resultados" ("url", "value", "busqueda_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["url", "https://api.chucknorris.io/jokes/SEH0BSGpTyeq7Fmgo1lv7Q"], ["value", "Chuck Norris goes to the Dentist to get a tooth extracted. The Dentist ask do you want gas or a shot ? Chuck Norris answers your gonna need both. Moments after the procedure the Dentist(with blured vision and sore rectum)observes Chuck Norris slowly getting dressed."], ["busqueda_id", 4], ["created_at", "2022-06-08 23:21:45.408183"], ["updated_at", "2022-06-08 23:21:45.408183"]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mBusqueda Load (0.1ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas" WHERE "busquedas"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mResultado Create (0.1ms)[0m  [1m[32mINSERT INTO "resultados" ("url", "value", "busqueda_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["url", "https://api.chucknorris.io/jokes/_2iW8yQSRFCPxcfgKF6Bxw"], ["value", "Chuck Norris super human kicking speed is the reason The Flash can be seen in slow motion running bare footed."], ["busqueda_id", 4], ["created_at", "2022-06-08 23:21:45.413863"], ["updated_at", "2022-06-08 23:21:45.413863"]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mBusqueda Load (0.0ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas" WHERE "busquedas"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mResultado Create (0.1ms)[0m  [1m[32mINSERT INTO "resultados" ("url", "value", "busqueda_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["url", "https://api.chucknorris.io/jokes/KxyjOoJHRRWwlK9CLF_IdA"], ["value", "Remember when I said Chuck Norris was slower than Sonic. I lied. Their top speed is equal."], ["busqueda_id", 4], ["created_at", "2022-06-08 23:21:45.418839"], ["updated_at", "2022-06-08 23:21:45.418839"]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mBusqueda Load (0.0ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas" WHERE "busquedas"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mResultado Create (0.1ms)[0m  [1m[32mINSERT INTO "resultados" ("url", "value", "busqueda_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["url", "https://api.chucknorris.io/jokes/xRIyaiYxTJygcPK0ySOaAg"], ["value", "Remember when I said Chuck Norris was slower than Sonic? I lied. Their top speed is equal."], ["busqueda_id", 4], ["created_at", "2022-06-08 23:21:45.423741"], ["updated_at", "2022-06-08 23:21:45.423741"]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mBusqueda Load (0.0ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas" WHERE "busquedas"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mResultado Create (0.1ms)[0m  [1m[32mINSERT INTO "resultados" ("url", "value", "busqueda_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["url", "https://api.chucknorris.io/jokes/ev-TkgRYR62RXyeIMpYtEQ"], ["value", "Chuck Norris can finish a fat Cuban cigar in a single massive drag. He will then crunch up and swallow the roach, and stare at you while slowly exhaling through his nostrils."], ["busqueda_id", 4], ["created_at", "2022-06-08 23:21:45.427898"], ["updated_at", "2022-06-08 23:21:45.427898"]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mBusqueda Load (0.2ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas" WHERE "busquedas"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mResultado Create (0.1ms)[0m  [1m[32mINSERT INTO "resultados" ("url", "value", "busqueda_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["url", "https://api.chucknorris.io/jokes/mwKrQ1vJSeuFygRI8XThrA"], ["value", "Chuck Norris can make a slow cooker grill a steak"], ["busqueda_id", 4], ["created_at", "2022-06-08 23:21:45.432042"], ["updated_at", "2022-06-08 23:21:45.432042"]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mBusqueda Load (0.1ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas" WHERE "busquedas"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mResultado Create (0.1ms)[0m  [1m[32mINSERT INTO "resultados" ("url", "value", "busqueda_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["url", "https://api.chucknorris.io/jokes/7MX7aZZhRwyU_QOGFCc8zA"], ["value", "Chuck Norris invented walking in slow motion with explosions behind him."], ["busqueda_id", 4], ["created_at", "2022-06-08 23:21:45.436190"], ["updated_at", "2022-06-08 23:21:45.436190"]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mBusqueda Load (0.0ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas" WHERE "busquedas"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mResultado Create (0.1ms)[0m  [1m[32mINSERT INTO "resultados" ("url", "value", "busqueda_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["url", "https://api.chucknorris.io/jokes/I7E8gjrcRbypCN547Oaj9g"], ["value", "The Cheetah has to outrun the antelope.....not so it can catch it, but in the hopes Chuck Norris will kill the slowest animal, as the Cheetah simply can't outrun him."], ["busqueda_id", 4], ["created_at", "2022-06-08 23:21:45.440367"], ["updated_at", "2022-06-08 23:21:45.440367"]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mBusqueda Load (0.0ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas" WHERE "busquedas"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mResultado Create (0.1ms)[0m  [1m[32mINSERT INTO "resultados" ("url", "value", "busqueda_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["url", "https://api.chucknorris.io/jokes/S8wqquxLTQSd5OiV9v5Zjg"], ["value", "Step 1: Have this Pokemon team: Slowking, Bibarel, Sawk, Throh, Conkeldurr, and your starter. Make sure all 6, besides the starter, are male and are nicknamed Chuck Norris. Step 2: Use this team in every Pokemon battle. You will always win with it."], ["busqueda_id", 4], ["created_at", "2022-06-08 23:21:45.444567"], ["updated_at", "2022-06-08 23:21:45.444567"]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mBusqueda Load (0.1ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas" WHERE "busquedas"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mResultado Create (0.2ms)[0m  [1m[32mINSERT INTO "resultados" ("url", "value", "busqueda_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["url", "https://api.chucknorris.io/jokes/4e2mjAtcRCKO-AMEc9ZoHw"], ["value", "When Chuck Norris was born he round house kicked the Doctor in the face Slow mo' 3 times for slapping his ass."], ["busqueda_id", 4], ["created_at", "2022-06-08 23:21:45.448677"], ["updated_at", "2022-06-08 23:21:45.448677"]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mBusqueda Load (0.0ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas" WHERE "busquedas"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mResultado Create (0.1ms)[0m  [1m[32mINSERT INTO "resultados" ("url", "value", "busqueda_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["url", "https://api.chucknorris.io/jokes/TKCLl5LQS66WZNjIOQF8ig"], ["value", "If Chuck Norris is late, time better slow the fuck down."], ["busqueda_id", 4], ["created_at", "2022-06-08 23:21:45.453242"], ["updated_at", "2022-06-08 23:21:45.453242"]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mTRANSACTION (2.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mBusqueda Load (0.0ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas" WHERE "busquedas"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mResultado Create (0.1ms)[0m  [1m[32mINSERT INTO "resultados" ("url", "value", "busqueda_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["url", "https://api.chucknorris.io/jokes/nHycjNs-TmCB0qficLBpFg"], ["value", "Time stops whenever Chuck Norris takes his shades out of his pocket and slowly puts them on."], ["busqueda_id", 4], ["created_at", "2022-06-08 23:21:45.458246"], ["updated_at", "2022-06-08 23:21:45.458246"]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mBusqueda Load (0.0ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas" WHERE "busquedas"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mResultado Create (0.1ms)[0m  [1m[32mINSERT INTO "resultados" ("url", "value", "busqueda_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["url", "https://api.chucknorris.io/jokes/Oe95uvzDR6iUV6z-mNYXgQ"], ["value", "Chuck Norris's spinning back-fist was the inspiration for the centrifuge . They just had to slow it down ."], ["busqueda_id", 4], ["created_at", "2022-06-08 23:21:45.462465"], ["updated_at", "2022-06-08 23:21:45.462465"]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mBusqueda Load (0.0ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas" WHERE "busquedas"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mResultado Create (0.1ms)[0m  [1m[32mINSERT INTO "resultados" ("url", "value", "busqueda_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["url", "https://api.chucknorris.io/jokes/HWZchT7_RhODK50W0pgy7w"], ["value", "When Chuck Norris was about to undergo a major surgical procedure, he was given a strong anesthetic and told to count backward slowly from one hundred. When Chuck got to zero and still didn't feel even slightly drowsy, he naturally murdered all the doctors with their own tools and performed the procedure himself."], ["busqueda_id", 4], ["created_at", "2022-06-08 23:21:45.466471"], ["updated_at", "2022-06-08 23:21:45.466471"]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mBusqueda Load (0.1ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas" WHERE "busquedas"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mResultado Create (0.1ms)[0m  [1m[32mINSERT INTO "resultados" ("url", "value", "busqueda_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["url", "https://api.chucknorris.io/jokes/H1oEVaV_S4C2RSyjbnUGPg"], ["value", "Contrary to what was widely reported, Saddam Hussein was not hanged in Iraq - he was slowly liquified, inch by inch, in Chuck Norris' basement."], ["busqueda_id", 4], ["created_at", "2022-06-08 23:21:45.470447"], ["updated_at", "2022-06-08 23:21:45.470447"]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mBusqueda Load (0.0ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas" WHERE "busquedas"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mResultado Create (0.1ms)[0m  [1m[32mINSERT INTO "resultados" ("url", "value", "busqueda_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["url", "https://api.chucknorris.io/jokes/04UEUXsVRjqQzYNlX_ZkhQ"], ["value", "If Chuck Norris is late....time better slow the fuck down!!"], ["busqueda_id", 4], ["created_at", "2022-06-08 23:21:45.474873"], ["updated_at", "2022-06-08 23:21:45.474873"]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mBusqueda Load (0.0ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas" WHERE "busquedas"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mResultado Create (0.1ms)[0m  [1m[32mINSERT INTO "resultados" ("url", "value", "busqueda_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["url", "https://api.chucknorris.io/jokes/f6hAisDcTZy-79nF39Gzug"], ["value", "Fact: The closest a fist has ever come to Chuck Norris' face is when he eats. In fact, there's a Hollywood legend that when Chuck Norris eats a hot dog, they have to slow the film down just so you can see it."], ["busqueda_id", 4], ["created_at", "2022-06-08 23:21:45.478928"], ["updated_at", "2022-06-08 23:21:45.478928"]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mBusqueda Load (0.0ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas" WHERE "busquedas"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mResultado Create (0.1ms)[0m  [1m[32mINSERT INTO "resultados" ("url", "value", "busqueda_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["url", "https://api.chucknorris.io/jokes/56gBgT03QTaU-7YyN0tFVA"], ["value", "Vin diesel got into a fight with Chuck Norris, and he kicked Chuck's ass and everyone cheered, Vin! Vin! Vin!..and Vin smiled at the adoring crowd...Vin! Vin!...but then Vin started waking up and slowly opened his eyes to find Chuck at his bed side, nudging at him, saying, Vin, Vin wake up..then Vin realized it was a dream, and Chuck Norris punched him in the fucking face."], ["busqueda_id", 4], ["created_at", "2022-06-08 23:21:45.482807"], ["updated_at", "2022-06-08 23:21:45.482807"]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mBusqueda Load (0.0ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas" WHERE "busquedas"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mResultado Create (0.1ms)[0m  [1m[32mINSERT INTO "resultados" ("url", "value", "busqueda_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["url", "https://api.chucknorris.io/jokes/fDV96WdnSCiNnE5EPpQ2Xw"], ["value", "If any one who gets this message should know to never call Chuck Norris a fraud or you will end up like me and the rest who are in Chuck Norrie's stomach being prepared to be slowly digested without knowing it."], ["busqueda_id", 4], ["created_at", "2022-06-08 23:21:45.486686"], ["updated_at", "2022-06-08 23:21:45.486686"]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mBusqueda Load (0.0ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas" WHERE "busquedas"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mResultado Create (0.1ms)[0m  [1m[32mINSERT INTO "resultados" ("url", "value", "busqueda_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["url", "https://api.chucknorris.io/jokes/r5MQa1NGTLG2vIgyENy1ZA"], ["value", "my computer was running slow and wasn't working right. and ever since i changed the screen saver to a picture of Chuck Norris, its speed has increased and runs better than before. coincidence? I think not!"], ["busqueda_id", 4], ["created_at", "2022-06-08 23:21:45.490998"], ["updated_at", "2022-06-08 23:21:45.490998"]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mBusqueda Load (0.0ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas" WHERE "busquedas"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mResultado Create (0.1ms)[0m  [1m[32mINSERT INTO "resultados" ("url", "value", "busqueda_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["url", "https://api.chucknorris.io/jokes/4UXPnQ3aQZelqeZbVuviNA"], ["value", "Chuck Norris raced Sonic The Hedgehog and lost... by about 3 Planck time. Ok, so they didn't race, but it's an estimate... Sonic's top speed: 45 miles per Planck time. Chuck Norris's top speed: 89.728 miles per 2 Planck times. By the way, in case you're wondering, one Planck time is 5.4 times 10-to-the-power-of-negative-44 seconds. That's how long it takes for light to travel one Planck LENGTH (16.162 times 10-to-the-power-of-negative-36-meters). Therefore, Chuck Norris is faster than light, and only a bit slower than Sonic."], ["busqueda_id", 4], ["created_at", "2022-06-08 23:21:45.494929"], ["updated_at", "2022-06-08 23:21:45.494929"]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mBusqueda Load (0.0ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas" WHERE "busquedas"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mResultado Create (0.1ms)[0m  [1m[32mINSERT INTO "resultados" ("url", "value", "busqueda_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["url", "https://api.chucknorris.io/jokes/o6hnjjOITzehqLHbSWS8hQ"], ["value", "Late at night, Chuck Norris was once walking back home alone after watching a Chuck Norris movie. A mugger approached him from the back, tapped on his shoulder and said \"Hey, gimme your money!\". Chuck Norris slowly turned around, paused for a while and gave the mugger a sarcastic smile. He then proceeded to rape the mugger anally, crush his skull, break his spine and killed him in a fraction of a second. Chuck Norris then brought the mugger back to life and then broke each of his limbs, eviscerated the mugger's gut, ate the mugger's still beating heart and infected him with AIDS, killing the unfortunate mugger once again. Chuck Norris then brough the mugger to life yet again for the second time, only to give the mugger a final fatal roundhous kick to his face killing the man and his soul at the same time. Chuck Norris then threw his packed wallet at the remains of his victim and said \"Do not tap on my shoulders ever again\", and continued to walk home slowly."], ["busqueda_id", 4], ["created_at", "2022-06-08 23:21:45.498938"], ["updated_at", "2022-06-08 23:21:45.498938"]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mBusqueda Load (0.1ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas" WHERE "busquedas"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mResultado Create (0.1ms)[0m  [1m[32mINSERT INTO "resultados" ("url", "value", "busqueda_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["url", "https://api.chucknorris.io/jokes/lGPOoG2TRQydc8EItYlKng"], ["value", "When observing a Chuck Norris roundhouse kick in slow motion, one finds that Chuck Norris actually rapes his victim in the ass, smokes a cigarette with Dennis Leary, and then roundhouse kicks them in the face."], ["busqueda_id", 4], ["created_at", "2022-06-08 23:21:45.504200"], ["updated_at", "2022-06-08 23:21:45.504200"]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mBusqueda Load (0.0ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas" WHERE "busquedas"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mResultado Create (0.1ms)[0m  [1m[32mINSERT INTO "resultados" ("url", "value", "busqueda_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["url", "https://api.chucknorris.io/jokes/uIrcWG7dRQG2SE2ZITAldQ"], ["value", "Pepis was created when Chuck Norris said i want a Drink and not a Coke they owe me money. Pepis was thought of, invented, created, canned, and brought to Chuck Norris in 12 mins. Chuck Norris still roundhouse kicked the delivery guy for being to slow with his drink"], ["busqueda_id", 4], ["created_at", "2022-06-08 23:21:45.508578"], ["updated_at", "2022-06-08 23:21:45.508578"]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+Redirected to http://localhost:3000/busquedas/4
+Completed 302 Found in 393ms (ActiveRecord: 68.3ms | Allocations: 91346)
+
+
+Started GET "/busquedas/4" for 172.23.0.1 at 2022-06-08 23:21:45 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BusquedasController#show as TURBO_STREAM
+  Parameters: {"id"=>"4"}
+  [1m[36mBusqueda Load (0.1ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas" WHERE "busquedas"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/busquedas_controller.rb:132:in `set_busqueda'
+  Rendering layout layouts/application.html.erb
+  Rendering busquedas/show.html.erb within layouts/application
+  Rendered busquedas/_busqueda.html.erb (Duration: 0.1ms | Allocations: 32)
+  [1m[36mResultado Load (0.1ms)[0m  [1m[34mSELECT "resultados".* FROM "resultados" WHERE "resultados"."busqueda_id" = ?[0m  [["busqueda_id", 4]]
+  ↳ app/views/busquedas/show.html.erb:7
+  Rendered collection of resultados/_resultado.html.erb [30 times] (Duration: 0.9ms | Allocations: 654)
+  Rendered busquedas/show.html.erb within layouts/application (Duration: 2.9ms | Allocations: 2571)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 4854)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.2ms | Allocations: 5605)
+
+
+Started GET "/busquedas" for 172.23.0.1 at 2022-06-08 23:22:32 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BusquedasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering busquedas/index.html.erb within layouts/application
+  [1m[36mBusqueda Load (0.1ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas"[0m
+  ↳ app/views/busquedas/index.html.erb:8
+  Rendered busquedas/_busqueda.html.erb (Duration: 0.1ms | Allocations: 30)
+  Rendered busquedas/_busqueda.html.erb (Duration: 0.1ms | Allocations: 29)
+  Rendered busquedas/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1096)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 3394)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.1ms | Allocations: 3655)
+
+
+Started GET "/busquedas/new" for 172.23.0.1 at 2022-06-08 23:22:34 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BusquedasController#new as HTML
+  [1m[36mCategorium Delete All (6.0ms)[0m  [1m[31mDELETE FROM "categoria"[0m
+  ↳ app/models/CategorySearch.rb:12:in `categories'
+  [1m[36mCategorium Insert (3.3ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('animal', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (3.2ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('career', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (3.3ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('celebrity', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (1.9ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('dev', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (2.2ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('explicit', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (1.9ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('fashion', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (1.9ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('food', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (1.9ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('history', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (2.0ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('money', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (1.9ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('movie', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (2.1ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('music', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (2.0ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('political', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (2.1ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('religion', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (1.9ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('science', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (1.9ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('sport', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (2.0ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('travel', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  Rendering layout layouts/application.html.erb
+  Rendering busquedas/new.html.erb within layouts/application
+  [1m[36mCategorium Pluck (0.1ms)[0m  [1m[34mSELECT "categoria"."name", "categoria"."name" FROM "categoria"[0m
+  ↳ app/views/busquedas/_form.html.erb:27
+  Rendered busquedas/_form.html.erb (Duration: 3.8ms | Allocations: 2901)
+  Rendered busquedas/new.html.erb within layouts/application (Duration: 4.1ms | Allocations: 3009)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 5306)
+Completed 200 OK in 284ms (Views: 7.2ms | ActiveRecord: 41.5ms | Allocations: 14815)
+
+
+Started POST "/busquedas" for 172.23.0.1 at 2022-06-08 23:22:47 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BusquedasController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "busqueda"=>{"tipo"=>"random", "categoria"=>"", "texto"=>"", "email"=>"dani@prueba.es"}, "commit"=>"Create Busqueda"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:64:in `block in create'
+  [1m[36mBusqueda Create (0.2ms)[0m  [1m[32mINSERT INTO "busquedas" ("tipo", "categoria", "texto", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tipo", "random"], ["categoria", ""], ["texto", ""], ["email", "dani@prueba.es"], ["created_at", "2022-06-08 23:22:47.907791"], ["updated_at", "2022-06-08 23:22:47.907791"]]
+  ↳ app/controllers/busquedas_controller.rb:64:in `block in create'
+  [1m[36mTRANSACTION (3.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:64:in `block in create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mBusqueda Load (0.1ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas" WHERE "busquedas"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mResultado Create (0.1ms)[0m  [1m[32mINSERT INTO "resultados" ("url", "value", "busqueda_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["url", "https://api.chucknorris.io/jokes/qzScjayoRdSZOMhHv81aNg"], ["value", "Chuck Norris's pet Hamster has a ferris wheel."], ["busqueda_id", 5], ["created_at", "2022-06-08 23:22:47.917530"], ["updated_at", "2022-06-08 23:22:47.917530"]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mTRANSACTION (3.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+Redirected to http://localhost:3000/busquedas/5
+Completed 302 Found in 243ms (ActiveRecord: 7.6ms | Allocations: 12314)
+
+
+Started GET "/busquedas/5" for 172.23.0.1 at 2022-06-08 23:22:47 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BusquedasController#show as TURBO_STREAM
+  Parameters: {"id"=>"5"}
+  [1m[36mBusqueda Load (0.1ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas" WHERE "busquedas"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/busquedas_controller.rb:132:in `set_busqueda'
+  Rendering layout layouts/application.html.erb
+  Rendering busquedas/show.html.erb within layouts/application
+  Rendered busquedas/_busqueda.html.erb (Duration: 0.1ms | Allocations: 33)
+  [1m[36mResultado Load (0.1ms)[0m  [1m[34mSELECT "resultados".* FROM "resultados" WHERE "resultados"."busqueda_id" = ?[0m  [["busqueda_id", 5]]
+  ↳ app/views/busquedas/show.html.erb:7
+  Rendered collection of resultados/_resultado.html.erb [1 times] (Duration: 0.3ms | Allocations: 91)
+  Rendered busquedas/show.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1610)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 3985)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.1ms | Allocations: 4777)
+
+
+Started DELETE "/busquedas/5" for 172.23.0.1 at 2022-06-08 23:22:52 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BusquedasController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"5"}
+  [1m[36mBusqueda Load (0.1ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas" WHERE "busquedas"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/busquedas_controller.rb:132:in `set_busqueda'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Load (0.0ms)[0m  [1m[34mSELECT "resultados".* FROM "resultados" WHERE "resultados"."busqueda_id" = ?[0m  [["busqueda_id", 5]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Destroy (0.1ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 63]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mBusqueda Destroy (0.1ms)[0m  [1m[31mDELETE FROM "busquedas" WHERE "busquedas"."id" = ?[0m  [["id", 5]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mTRANSACTION (72.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+Redirected to http://localhost:3000/busquedas
+Completed 302 Found in 80ms (ActiveRecord: 73.1ms | Allocations: 4015)
+
+
+Started GET "/busquedas" for 172.23.0.1 at 2022-06-08 23:22:52 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BusquedasController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering busquedas/index.html.erb within layouts/application
+  [1m[36mBusqueda Load (0.1ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas"[0m
+  ↳ app/views/busquedas/index.html.erb:8
+  Rendered busquedas/_busqueda.html.erb (Duration: 0.1ms | Allocations: 30)
+  Rendered busquedas/_busqueda.html.erb (Duration: 0.0ms | Allocations: 29)
+  Rendered busquedas/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1137)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 3420)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.1ms | Allocations: 3683)
+
+
+Started GET "/busquedas/new" for 172.23.0.1 at 2022-06-08 23:22:57 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BusquedasController#new as HTML
+  [1m[36mCategorium Delete All (2.7ms)[0m  [1m[31mDELETE FROM "categoria"[0m
+  ↳ app/models/CategorySearch.rb:12:in `categories'
+  [1m[36mCategorium Insert (1.7ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('animal', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (1.7ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('career', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (1.7ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('celebrity', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (1.7ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('dev', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (1.9ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('explicit', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (1.7ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('fashion', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (1.8ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('food', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (1.7ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('history', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (1.7ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('money', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (1.6ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('movie', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (1.7ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('music', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (1.6ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('political', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (1.6ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('religion', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (1.6ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('science', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (1.7ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('sport', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (1.7ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('travel', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  Rendering layout layouts/application.html.erb
+  Rendering busquedas/new.html.erb within layouts/application
+  [1m[36mCategorium Pluck (0.1ms)[0m  [1m[34mSELECT "categoria"."name", "categoria"."name" FROM "categoria"[0m
+  ↳ app/views/busquedas/_form.html.erb:27
+  Rendered busquedas/_form.html.erb (Duration: 2.7ms | Allocations: 2978)
+  Rendered busquedas/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 3087)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 5370)
+Completed 200 OK in 210ms (Views: 5.2ms | ActiveRecord: 30.0ms | Allocations: 14874)
+
+
+Started POST "/busquedas" for 172.23.0.1 at 2022-06-08 23:23:09 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BusquedasController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "busqueda"=>{"tipo"=>"random", "categoria"=>"", "texto"=>"", "email"=>"dani@prueba.es"}, "commit"=>"Create Busqueda"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:64:in `block in create'
+  [1m[36mBusqueda Create (0.3ms)[0m  [1m[32mINSERT INTO "busquedas" ("tipo", "categoria", "texto", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tipo", "random"], ["categoria", ""], ["texto", ""], ["email", "dani@prueba.es"], ["created_at", "2022-06-08 23:23:09.617573"], ["updated_at", "2022-06-08 23:23:09.617573"]]
+  ↳ app/controllers/busquedas_controller.rb:64:in `block in create'
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:64:in `block in create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mBusqueda Load (0.1ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas" WHERE "busquedas"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mResultado Create (0.1ms)[0m  [1m[32mINSERT INTO "resultados" ("url", "value", "busqueda_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["url", "https://api.chucknorris.io/jokes/WdWCsM4wTOeDQ3qRKRBm3g"], ["value", "Chuck Norris has a wallet made of face."], ["busqueda_id", 6], ["created_at", "2022-06-08 23:23:09.626855"], ["updated_at", "2022-06-08 23:23:09.626855"]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mTRANSACTION (3.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+Redirected to http://localhost:3000/busquedas/6
+Completed 302 Found in 164ms (ActiveRecord: 7.3ms | Allocations: 6224)
+
+
+Started GET "/busquedas/6" for 172.23.0.1 at 2022-06-08 23:23:09 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BusquedasController#show as TURBO_STREAM
+  Parameters: {"id"=>"6"}
+  [1m[36mBusqueda Load (0.3ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas" WHERE "busquedas"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/busquedas_controller.rb:132:in `set_busqueda'
+  Rendering layout layouts/application.html.erb
+  Rendering busquedas/show.html.erb within layouts/application
+  Rendered busquedas/_busqueda.html.erb (Duration: 0.2ms | Allocations: 30)
+  [1m[36mResultado Load (0.2ms)[0m  [1m[34mSELECT "resultados".* FROM "resultados" WHERE "resultados"."busqueda_id" = ?[0m  [["busqueda_id", 6]]
+  ↳ app/views/busquedas/show.html.erb:7
+  Rendered collection of resultados/_resultado.html.erb [1 times] (Duration: 0.5ms | Allocations: 88)
+  Rendered busquedas/show.html.erb within layouts/application (Duration: 7.2ms | Allocations: 1506)
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 3781)
+Completed 200 OK in 17ms (Views: 12.9ms | ActiveRecord: 0.5ms | Allocations: 4522)
+
+
+Started DELETE "/busquedas/6" for 172.23.0.1 at 2022-06-08 23:23:13 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BusquedasController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"6"}
+  [1m[36mBusqueda Load (0.3ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas" WHERE "busquedas"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/busquedas_controller.rb:132:in `set_busqueda'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Load (0.1ms)[0m  [1m[34mSELECT "resultados".* FROM "resultados" WHERE "resultados"."busqueda_id" = ?[0m  [["busqueda_id", 6]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Destroy (0.1ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 64]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mBusqueda Destroy (0.1ms)[0m  [1m[31mDELETE FROM "busquedas" WHERE "busquedas"."id" = ?[0m  [["id", 6]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mTRANSACTION (4.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+Redirected to http://localhost:3000/busquedas
+Completed 302 Found in 15ms (ActiveRecord: 5.6ms | Allocations: 3972)
+
+
+Started GET "/busquedas" for 172.23.0.1 at 2022-06-08 23:23:13 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BusquedasController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering busquedas/index.html.erb within layouts/application
+  [1m[36mBusqueda Load (0.1ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas"[0m
+  ↳ app/views/busquedas/index.html.erb:8
+  Rendered busquedas/_busqueda.html.erb (Duration: 0.2ms | Allocations: 30)
+  Rendered busquedas/_busqueda.html.erb (Duration: 0.1ms | Allocations: 29)
+  Rendered busquedas/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1127)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | Allocations: 3410)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.1ms | Allocations: 3672)
+
+
+Started GET "/busquedas/new" for 172.23.0.1 at 2022-06-08 23:23:17 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BusquedasController#new as HTML
+  [1m[36mCategorium Delete All (72.8ms)[0m  [1m[31mDELETE FROM "categoria"[0m
+  ↳ app/models/CategorySearch.rb:12:in `categories'
+  [1m[36mCategorium Insert (3.6ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('animal', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (3.5ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('career', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (4.0ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('celebrity', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (3.0ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('dev', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (2.4ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('explicit', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (3.2ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('fashion', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (2.4ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('food', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (2.4ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('history', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (2.6ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('money', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (2.8ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('movie', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (2.6ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('music', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (2.4ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('political', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (2.4ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('religion', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (2.4ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('science', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (2.3ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('sport', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  [1m[36mCategorium Insert (2.4ms)[0m  [1m[32mINSERT INTO "categoria" ("name","created_at","updated_at") VALUES ('travel', STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW'), STRFTIME('%Y-%m-%d %H:%M:%f', 'NOW')) ON CONFLICT  DO NOTHING[0m
+  ↳ app/models/CategorySearch.rb:16:in `block in categories'
+  Rendering layout layouts/application.html.erb
+  Rendering busquedas/new.html.erb within layouts/application
+  [1m[36mCategorium Pluck (0.2ms)[0m  [1m[34mSELECT "categoria"."name", "categoria"."name" FROM "categoria"[0m
+  ↳ app/views/busquedas/_form.html.erb:27
+  Rendered busquedas/_form.html.erb (Duration: 8.8ms | Allocations: 2907)
+  Rendered busquedas/new.html.erb within layouts/application (Duration: 9.4ms | Allocations: 3015)
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 5299)
+Completed 200 OK in 344ms (Views: 15.3ms | ActiveRecord: 117.5ms | Allocations: 14774)
+
+
+Started POST "/busquedas" for 172.23.0.1 at 2022-06-08 23:23:36 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BusquedasController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "busqueda"=>{"tipo"=>"random", "categoria"=>"", "texto"=>"", "email"=>"dani@prueba.es"}, "commit"=>"Create Busqueda"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:64:in `block in create'
+  [1m[36mBusqueda Create (0.6ms)[0m  [1m[32mINSERT INTO "busquedas" ("tipo", "categoria", "texto", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["tipo", "random"], ["categoria", ""], ["texto", ""], ["email", "dani@prueba.es"], ["created_at", "2022-06-08 23:23:36.549928"], ["updated_at", "2022-06-08 23:23:36.549928"]]
+  ↳ app/controllers/busquedas_controller.rb:64:in `block in create'
+  [1m[36mTRANSACTION (4.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:64:in `block in create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mBusqueda Load (0.2ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas" WHERE "busquedas"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mResultado Create (0.7ms)[0m  [1m[32mINSERT INTO "resultados" ("url", "value", "busqueda_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["url", "https://api.chucknorris.io/jokes/pYgwAKJMS7GL9Asz9HszcA"], ["value", "Chuck Norris once frightened Christopher Walken. From now on he is known as Christopher Runnin."], ["busqueda_id", 7], ["created_at", "2022-06-08 23:23:36.568273"], ["updated_at", "2022-06-08 23:23:36.568273"]]
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+  [1m[36mTRANSACTION (3.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:150:in `crear_resultado'
+Redirected to http://localhost:3000/busquedas/7
+Completed 302 Found in 181ms (ActiveRecord: 9.5ms | Allocations: 6208)
+
+
+Started GET "/busquedas/7" for 172.23.0.1 at 2022-06-08 23:23:36 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BusquedasController#show as TURBO_STREAM
+  Parameters: {"id"=>"7"}
+  [1m[36mBusqueda Load (0.1ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas" WHERE "busquedas"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/busquedas_controller.rb:132:in `set_busqueda'
+  Rendering layout layouts/application.html.erb
+  Rendering busquedas/show.html.erb within layouts/application
+  Rendered busquedas/_busqueda.html.erb (Duration: 0.1ms | Allocations: 30)
+  [1m[36mResultado Load (0.0ms)[0m  [1m[34mSELECT "resultados".* FROM "resultados" WHERE "resultados"."busqueda_id" = ?[0m  [["busqueda_id", 7]]
+  ↳ app/views/busquedas/show.html.erb:7
+  Rendered collection of resultados/_resultado.html.erb [1 times] (Duration: 0.1ms | Allocations: 88)
+  Rendered busquedas/show.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1526)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 3801)
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.1ms | Allocations: 4542)
+
+
+Started GET "/busquedas" for 172.23.0.1 at 2022-06-08 23:23:56 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BusquedasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering busquedas/index.html.erb within layouts/application
+  [1m[36mBusqueda Load (0.1ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas"[0m
+  ↳ app/views/busquedas/index.html.erb:8
+  Rendered busquedas/_busqueda.html.erb (Duration: 0.1ms | Allocations: 30)
+  Rendered busquedas/_busqueda.html.erb (Duration: 0.0ms | Allocations: 29)
+  Rendered busquedas/_busqueda.html.erb (Duration: 0.1ms | Allocations: 29)
+  Rendered busquedas/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1248)
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 3531)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.1ms | Allocations: 3790)
+
+
+Started GET "/busquedas/7" for 172.23.0.1 at 2022-06-08 23:29:28 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BusquedasController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/busquedas_controller.rb:132:in `set_busqueda'
+  [1m[36mBusqueda Load (0.1ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas" WHERE "busquedas"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/busquedas_controller.rb:132:in `set_busqueda'
+  Rendering layout layouts/application.html.erb
+  Rendering busquedas/show.html.erb within layouts/application
+  Rendered busquedas/_busqueda.html.erb (Duration: 0.1ms | Allocations: 30)
+  [1m[36mResultado Load (0.1ms)[0m  [1m[34mSELECT "resultados".* FROM "resultados" WHERE "resultados"."busqueda_id" = ?[0m  [["busqueda_id", 7]]
+  ↳ app/views/busquedas/show.html.erb:7
+  Rendered collection of resultados/_resultado.html.erb [1 times] (Duration: 0.2ms | Allocations: 88)
+  Rendered busquedas/show.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1501)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 3791)
+Completed 200 OK in 12ms (Views: 5.4ms | ActiveRecord: 0.6ms | Allocations: 5103)
+
+
+Started DELETE "/busquedas/7" for 172.23.0.1 at 2022-06-08 23:29:29 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BusquedasController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"7"}
+  [1m[36mBusqueda Load (0.2ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas" WHERE "busquedas"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/busquedas_controller.rb:132:in `set_busqueda'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Load (0.2ms)[0m  [1m[34mSELECT "resultados".* FROM "resultados" WHERE "resultados"."busqueda_id" = ?[0m  [["busqueda_id", 7]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Destroy (0.4ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 65]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mBusqueda Destroy (0.3ms)[0m  [1m[31mDELETE FROM "busquedas" WHERE "busquedas"."id" = ?[0m  [["id", 7]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mTRANSACTION (74.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+Redirected to http://localhost:3000/busquedas
+Completed 302 Found in 90ms (ActiveRecord: 75.4ms | Allocations: 3999)
+
+
+Started GET "/busquedas" for 172.23.0.1 at 2022-06-08 23:29:29 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BusquedasController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering busquedas/index.html.erb within layouts/application
+  [1m[36mBusqueda Load (0.3ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas"[0m
+  ↳ app/views/busquedas/index.html.erb:8
+  Rendered busquedas/_busqueda.html.erb (Duration: 0.2ms | Allocations: 30)
+  Rendered busquedas/_busqueda.html.erb (Duration: 0.2ms | Allocations: 29)
+  Rendered busquedas/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1143)
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 3426)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.3ms | Allocations: 3688)
+
+
+Started GET "/busquedas/4" for 172.23.0.1 at 2022-06-08 23:29:30 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BusquedasController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mBusqueda Load (0.1ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas" WHERE "busquedas"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/busquedas_controller.rb:132:in `set_busqueda'
+  Rendering layout layouts/application.html.erb
+  Rendering busquedas/show.html.erb within layouts/application
+  Rendered busquedas/_busqueda.html.erb (Duration: 0.1ms | Allocations: 30)
+  [1m[36mResultado Load (0.1ms)[0m  [1m[34mSELECT "resultados".* FROM "resultados" WHERE "resultados"."busqueda_id" = ?[0m  [["busqueda_id", 4]]
+  ↳ app/views/busquedas/show.html.erb:7
+  Rendered collection of resultados/_resultado.html.erb [30 times] (Duration: 0.8ms | Allocations: 651)
+  Rendered busquedas/show.html.erb within layouts/application (Duration: 3.3ms | Allocations: 2527)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 4816)
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.2ms | Allocations: 5555)
+
+
+Started DELETE "/busquedas/4" for 172.23.0.1 at 2022-06-08 23:29:33 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BusquedasController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"4"}
+  [1m[36mBusqueda Load (0.1ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas" WHERE "busquedas"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/busquedas_controller.rb:132:in `set_busqueda'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Load (0.1ms)[0m  [1m[34mSELECT "resultados".* FROM "resultados" WHERE "resultados"."busqueda_id" = ?[0m  [["busqueda_id", 4]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Destroy (0.1ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 33]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Destroy (0.0ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 34]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Destroy (0.1ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 35]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Destroy (0.1ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 36]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Destroy (0.0ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 37]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Destroy (0.1ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 38]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Destroy (0.1ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 39]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Destroy (0.1ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 40]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Destroy (0.0ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 41]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Destroy (0.0ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 42]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Destroy (0.1ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 43]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Destroy (0.0ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 44]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Destroy (0.0ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 45]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Destroy (0.0ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 46]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Destroy (0.0ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 47]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Destroy (0.0ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 48]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Destroy (0.0ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 49]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Destroy (0.0ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 50]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Destroy (0.0ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 51]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Destroy (0.0ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 52]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Destroy (0.0ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 53]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Destroy (0.0ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 54]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Destroy (0.0ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 55]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Destroy (0.0ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 56]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Destroy (0.1ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 57]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Destroy (0.1ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 58]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Destroy (0.1ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 59]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Destroy (0.1ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 60]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Destroy (0.1ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 61]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Destroy (0.0ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 62]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mBusqueda Destroy (0.1ms)[0m  [1m[31mDELETE FROM "busquedas" WHERE "busquedas"."id" = ?[0m  [["id", 4]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mTRANSACTION (73.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+Redirected to http://localhost:3000/busquedas
+Completed 302 Found in 100ms (ActiveRecord: 75.9ms | Allocations: 25456)
+
+
+Started GET "/busquedas" for 172.23.0.1 at 2022-06-08 23:29:33 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BusquedasController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering busquedas/index.html.erb within layouts/application
+  [1m[36mBusqueda Load (0.1ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas"[0m
+  ↳ app/views/busquedas/index.html.erb:8
+  Rendered busquedas/_busqueda.html.erb (Duration: 0.1ms | Allocations: 30)
+  Rendered busquedas/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 976)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 3260)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.1ms | Allocations: 3522)
+
+
+Started GET "/busquedas/3" for 172.23.0.1 at 2022-06-08 23:29:35 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BusquedasController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mBusqueda Load (0.1ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas" WHERE "busquedas"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/busquedas_controller.rb:132:in `set_busqueda'
+  Rendering layout layouts/application.html.erb
+  Rendering busquedas/show.html.erb within layouts/application
+  Rendered busquedas/_busqueda.html.erb (Duration: 0.1ms | Allocations: 30)
+  [1m[36mResultado Load (0.1ms)[0m  [1m[34mSELECT "resultados".* FROM "resultados" WHERE "resultados"."busqueda_id" = ?[0m  [["busqueda_id", 3]]
+  ↳ app/views/busquedas/show.html.erb:7
+  Rendered collection of resultados/_resultado.html.erb [1 times] (Duration: 0.2ms | Allocations: 88)
+  Rendered busquedas/show.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1490)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 3765)
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 0.3ms | Allocations: 4503)
+
+
+Started DELETE "/busquedas/3" for 172.23.0.1 at 2022-06-08 23:29:36 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BusquedasController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"3"}
+  [1m[36mBusqueda Load (0.2ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas" WHERE "busquedas"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/busquedas_controller.rb:132:in `set_busqueda'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Load (0.2ms)[0m  [1m[34mSELECT "resultados".* FROM "resultados" WHERE "resultados"."busqueda_id" = ?[0m  [["busqueda_id", 3]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mResultado Destroy (0.4ms)[0m  [1m[31mDELETE FROM "resultados" WHERE "resultados"."id" = ?[0m  [["id", 32]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mBusqueda Destroy (0.3ms)[0m  [1m[31mDELETE FROM "busquedas" WHERE "busquedas"."id" = ?[0m  [["id", 3]]
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+  [1m[36mTRANSACTION (73.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/busquedas_controller.rb:121:in `destroy'
+Redirected to http://localhost:3000/busquedas
+Completed 302 Found in 90ms (ActiveRecord: 74.4ms | Allocations: 3987)
+
+
+Started GET "/busquedas" for 172.23.0.1 at 2022-06-08 23:29:36 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BusquedasController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering busquedas/index.html.erb within layouts/application
+  [1m[36mBusqueda Load (0.2ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas"[0m
+  ↳ app/views/busquedas/index.html.erb:8
+  Rendered busquedas/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 798)
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 3081)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.2ms | Allocations: 3343)
+
+
+Started GET "/busquedas" for 172.23.0.1 at 2022-06-08 23:29:39 +0000
+Cannot render console from 172.23.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BusquedasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering busquedas/index.html.erb within layouts/application
+  [1m[36mBusqueda Load (0.1ms)[0m  [1m[34mSELECT "busquedas".* FROM "busquedas"[0m
+  ↳ app/views/busquedas/index.html.erb:8
+  Rendered busquedas/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 798)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 3081)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.1ms | Allocations: 3337)
+
+
