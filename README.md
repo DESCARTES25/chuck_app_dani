@@ -7,17 +7,28 @@ Things you may want to cover:
 
 * Ruby version
 
+   ruby 3.1.2p20 (2022-04-12 revision 4491bb740a) [x86_64-linux]
+
+
 * System dependencies
+
+    Rails + Sqlite + Httparty
 
 * Configuration
 
+    -
+
 * Database creation
+
+    Already Created
 
 * Database initialization
 
+    Database is empty 
+
 * How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+    rake
 
 * Deployment instructions
 
@@ -32,3 +43,17 @@ Things you may want to cover:
     Stop App:
 
     docker-compose down
+    
+* App Images
+
+    Init
+    
+    ![alt text](1.png?raw=true)  
+        
+    Category Search
+    
+    Text Search
+    
+    Random Search
+        
+    Search List
