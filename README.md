@@ -52,8 +52,22 @@ Things you may want to cover:
         
     Category Search
     
+    ![alt text](2.png?raw=true)  
+        
+    ![alt text](3.png?raw=true)  
+            
     Text Search
-    
+
+   ![alt text](4.png?raw=true)  
+        
+    ![alt text](5.png?raw=true)  
+            
     Random Search
         
+   ![alt text](6.png?raw=true)  
+        
+    ![alt text](7.png?raw=true)  
+            
+
+
     Search List
