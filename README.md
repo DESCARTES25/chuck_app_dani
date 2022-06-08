@@ -54,20 +54,27 @@ Things you may want to cover:
     
     ![alt text](2.png?raw=true)  
         
-    ![alt text](3.png?raw=true)  
-            
-    Text Search
+    ![alt text](3.png?raw=true) 
 
-   ![alt text](4.png?raw=true)  
+    ![alt text](4.png?raw=true)             
+    
+    Text Search
         
     ![alt text](5.png?raw=true)  
-            
+   
+    ![alt text](6.png?raw=true)  
+
     Random Search
         
-   ![alt text](6.png?raw=true)  
+
         
     ![alt text](7.png?raw=true)  
             
-
+        
+    ![alt text](8.png?raw=true)  
+       
 
     Search List
+
+   ![alt text](9.png?raw=true)  
+      
