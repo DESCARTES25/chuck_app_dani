@@ -1,3 +1,3 @@
 class Categorium < ApplicationRecord
-    validates :name, uniqueness: true
+    #validates :name, uniqueness: true
 end

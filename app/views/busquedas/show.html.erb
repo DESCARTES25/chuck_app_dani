@@ -1,7 +1,9 @@
 <p style="color: green"><%= notice %></p>
 
 <%= render @busqueda %>
+<div class="w3-container w3-teal">
 <h2>Resultados</h2>
+</div> 
 <%= render @busqueda.resultados %>
 <div>
   <%= link_to "Edit this busqueda", edit_busqueda_path(@busqueda) %> |

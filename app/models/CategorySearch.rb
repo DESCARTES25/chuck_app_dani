@@ -9,16 +9,13 @@ class CategorySearch
     
     category_array =  self.class.get("/categories")
 
+    Categorium.delete_all
+
     category_array.each do |item|
-       puts item
-       
-       Categorium.upsert({name: item}, unique_by: [:name])
+      
+       Categorium.insert({name: item})
 
     end
-
-    # Categorium.upsert_all(category_array.map { |name|
-    #   {name: name}
-    # }, unique_by: [:name])
 
   end
 

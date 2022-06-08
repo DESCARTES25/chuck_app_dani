@@ -46,18 +46,5 @@ class ResultadoTest < ActiveSupport::TestCase
     assert (not resultado.valid?)
   end
 
-  # test 'busqueda_correo_invalido' do
-  #   busqueda = Busqueda.new(tipo: 'texto', texto: 'fast' , email: 'escartin.danielgmail.com')
-  #   assert (not busqueda.valid?)
-  # end
-
-  # test 'busqueda_correo_no_presente' do
-  #   busqueda = Busqueda.new(tipo: 'texto', texto: 'fast' , email: nil)
-  #   assert (not busqueda.valid?)
-  # end
-
-  # test 'busqueda_tipo_busqueda_incorrecto' do
-  #   busqueda = Busqueda.new(tipo: 'categorio',  categoria: 'animal' , email: 'escartin.daniel@gmail.com')
-  #   assert (not busqueda.valid?)
-  # end
+  
 end
